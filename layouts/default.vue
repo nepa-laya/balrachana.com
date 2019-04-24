@@ -56,4 +56,13 @@ body {
 .upper {
   min-height: calc(100vh - 290px);
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
 </style>

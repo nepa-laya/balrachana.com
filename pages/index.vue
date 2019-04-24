@@ -3,11 +3,14 @@
     <div>
       <div class="sections row">
         <nuxt-link v-for="(section, key, index) in sections" :key="section.slug" :to="'/' + (section.slug || '#')">
-          <div :style="{ background: getBgColor(index) }" class="section">
+          <div :style="{ background: getBgColor(index) }" class="section" :class="{ disabled: !section.slug }">
             <img :src="section.thumbnail" :alt="section.alt" />
-            <h2>
-              {{ section.title }}
-            </h2>
+            <div class="title">
+              <h2>
+                {{ section.title }}
+              </h2>
+              <h4>{{ section.subtitle }}</h4>
+            </div>
           </div>
         </nuxt-link>
       </div>
@@ -34,25 +37,27 @@ export default {
 
 <style lang="scss">
 .sections {
-  flex-wrap: wrap;
   margin: 1rem;
-}
-.sections > a {
-  text-align: center;
-  flex-grow: 1;
-  flex-basis: 0;
-  min-width: 300px;
-  div {
-    padding: 1rem 1rem 0 1rem;
+  > a {
+    border: 1px solid mistyrose;
+    text-align: center;
+    flex-grow: 1;
+    // min-width: 500px;
+    div {
+      padding: 1rem 1rem 0 1rem;
+    }
+    .title {
+      color: #333;
+      padding: 1rem;
+    }
+    h4 {
+      min-height: 24px;
+    }
   }
-  h2 {
-    color: #333;
-    padding: 1rem;
+  img {
+    width: 400px;
+    padding: 2rem;
+    height: 400px;
   }
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 </style>

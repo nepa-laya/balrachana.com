@@ -48,6 +48,13 @@ export default {
 .heading {
   display: flex;
   padding: 1rem;
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  h1 {
+    padding: 1rem 0;
+  }
 }
 .heading > * {
   padding: 1rem;
