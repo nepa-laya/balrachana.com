@@ -55,9 +55,9 @@ export default {
     }
   }
   img {
-    width: 400px;
+    width: 300px;
     padding: 2rem;
-    height: 400px;
+    height: 300px;
   }
 }
 </style>

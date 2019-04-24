@@ -31,9 +31,7 @@
         <ul>
           <li>
             <img src="/img/youtube.svg" alt="YouTube" />
-            <a href="https://www.youtube.com/channel/UC2U1J-waGLHzHb9MI6kCkSw?sub_confirmation=1" target="_blank" rel="noopener noreferrer"
-              >YouTube</a
-            >
+            <a href="https://www.youtube.com/balrachana" target="_blank" rel="noopener noreferrer">YouTube</a>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">

@@ -53,6 +53,13 @@ export const state = () => ({
       alt: 'Cham Cham Tara',
       // slug: 'cham_cham_tara',
       thumbnail: '/img/sections/cham_cham_tara.jpg'
+    },
+    sel_roti_batulo: {
+      title: 'सेल रोटी बाटुलो',
+      subtitle: 'र अरु बालगीत',
+      alt: 'Sel Roti Batulo',
+      // slug: 'sel_roti_batulo',
+      thumbnail: '/img/sections/sel_roti_batulo.jpg'
     }
   }
 })
