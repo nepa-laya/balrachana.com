@@ -7,17 +7,20 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint'
   },
-  extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended',
-    'plugin:prettier/recommended',
-    'prettier',
-    'prettier/vue'
-  ],
-  plugins: [
-    'prettier'
-  ],
+  extends: ['@nuxtjs', 'plugin:nuxt/recommended', 'plugin:prettier/recommended', 'prettier', 'prettier/vue'],
+  plugins: ['prettier'],
   // add your custom rules here
   rules: {
+    'no-console': 'off',
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: 20,
+        multiline: {
+          max: 20,
+          allowFirstLine: true
+        }
+      }
+    ]
   }
 }
