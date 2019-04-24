@@ -1,8 +1,6 @@
 <template>
   <section class="container">
     <div>
-      <Header />
-
       <div class="heading">
         <img :src="section.thumbnail" :alt="section.alt" />
         <div class="text">
@@ -12,7 +10,6 @@
       </div>
       <div class="children">
         <div v-for="child in section.children" :key="child.title" class="child">
-          <!-- <youtube :video-id="urlToId(child.youtube)"></youtube> -->
           <vue-plyr>
             <div data-plyr-provider="youtube" :data-plyr-embed-id="urlToId(child.youtube)"></div>
           </vue-plyr>
@@ -24,12 +21,8 @@
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
 import { youtubeParser } from '~/plugins/utils'
 export default {
-  components: {
-    Header
-  },
   computed: {
     section() {
       return this.$store.state.sections[this.slug]

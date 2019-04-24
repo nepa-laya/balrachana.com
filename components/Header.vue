@@ -32,19 +32,6 @@
   }
 }
 
-img {
-  max-width: 100%;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-body {
-  background: #e8ebf0;
-}
-
 #yt-sub {
   min-width: 174px;
   min-height: 52px;

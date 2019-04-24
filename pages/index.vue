@@ -1,7 +1,6 @@
 <template>
   <section class="container">
     <div>
-      <Header />
       <div class="sections row">
         <nuxt-link v-for="(section, key, index) in sections" :key="section.slug" :to="'/' + (section.slug || '#')">
           <div :style="{ background: getBgColor(index) }" class="section">
@@ -17,13 +16,9 @@
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
 import { getColor } from '~/plugins/utils'
 
 export default {
-  components: {
-    Header
-  },
   computed: {
     sections() {
       return this.$store.state.sections
