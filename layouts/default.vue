@@ -1,21 +1,26 @@
 <template>
-  <div>
-    <Header />
-    <nuxt />
+  <div class="content">
+    <div class="upper">
+      <Header />
+      <nuxt />
+    </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
 export default {
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>
 
 <style>
-/* html {
+html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
@@ -24,7 +29,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-} */
+  line-height: 1.5rem;
+  color: #333;
+}
 
 *,
 *:before,
@@ -44,5 +51,9 @@ img {
 
 body {
   background: #e8ebf0;
+}
+
+.upper {
+  min-height: calc(100vh - 290px);
 }
 </style>

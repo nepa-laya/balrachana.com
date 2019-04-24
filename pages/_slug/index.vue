@@ -64,7 +64,6 @@ export default {
   flex-grow: 1;
   flex-basis: 0;
   background: #ddd;
-  color: #222;
   text-align: center;
   max-width: 500px;
 
