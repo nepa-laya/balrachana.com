@@ -12,8 +12,11 @@
       </div>
       <div class="children">
         <div v-for="child in section.children" :key="child.title" class="child">
+          <!-- <youtube :video-id="urlToId(child.youtube)"></youtube> -->
+          <vue-plyr>
+            <div data-plyr-provider="youtube" :data-plyr-embed-id="urlToId(child.youtube)"></div>
+          </vue-plyr>
           <h2>{{ child.title }}</h2>
-          <youtube :video-id="urlToId(child.youtube)"></youtube>
         </div>
       </div>
     </div>
@@ -22,6 +25,7 @@
 
 <script>
 import Header from '~/components/Header.vue'
+import { youtubeParser } from '~/plugins/utils'
 export default {
   components: {
     Header
@@ -41,14 +45,13 @@ export default {
   },
   methods: {
     urlToId(url) {
-      console.log(this.$app)
-      return this.$youtube.getIdFromURL(url)
+      return youtubeParser(url)
     }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 .heading {
   display: flex;
   padding: 1rem;
@@ -59,5 +62,25 @@ export default {
 
 .children {
   margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  margin: 1rem;
+  flex-grow: 1;
+  flex-basis: 0;
+  background: #ddd;
+  color: #222;
+  text-align: center;
+  max-width: 500px;
+
+  h2 {
+    padding: 1rem;
+  }
+}
+
+.plyr--video {
+  max-width: 500px;
 }
 </style>
