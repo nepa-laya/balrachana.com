@@ -4,9 +4,9 @@ export const state = () => ({
       slug: 'varnamala',
       title: 'नेपाली वर्णमाला',
       alt: 'Varnamala',
+      description: 'haha huhua sadsal;kd <br/>aksjdksajd asd',
       thumbnail: '/img/sections/varnamala.jpg',
       youtube: 'https://www.youtube.com/playlist?list=PLJ997Q88AEvkO8El-Lo_knCcQlwj6IUUs',
-      color: '#35BCE6',
       children: [
         {
           title: 'वर्णमाला - १ [क ख ग घ ङ]',
@@ -21,8 +21,7 @@ export const state = () => ({
     swarmala: {
       title: 'स्वरमाला',
       alt: 'Swarmala',
-      thumbnail: '/img/sections/swarmala.jpg',
-      color: '#FF742E'
+      thumbnail: '/img/sections/swarmala.jpg'
     }
   }
 })

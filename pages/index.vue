@@ -3,7 +3,7 @@
     <div>
       <Header />
       <div class="sections row">
-        <div v-for="section in sections" :key="section.slug" :style="{ background: section.color }" class="section">
+        <div v-for="(section, key, index) in sections" :key="section.slug" :style="{ background: getBgColor(index) }" class="section">
           <img :src="section.thumbnail" :alt="section.alt" />
           <h3>
             <small>{{ section.title }}</small>
@@ -16,6 +16,8 @@
 
 <script>
 import Header from '~/components/Header.vue'
+import { getColor } from '~/plugins/utils'
+
 export default {
   components: {
     Header
@@ -23,6 +25,12 @@ export default {
   computed: {
     sections() {
       return this.$store.state.sections
+    }
+  },
+  methods: {
+    getBgColor(ind) {
+      console.log(ind)
+      return getColor(ind)
     }
   }
 }
