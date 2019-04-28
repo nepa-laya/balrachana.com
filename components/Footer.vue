@@ -27,7 +27,7 @@
         </ul>
       </div>
       <div class="social-media">
-        <h3>Follow us</h3>
+        <h3>Let's Be Friends</h3>
         <ul>
           <li>
             <img src="/img/youtube.svg" alt="YouTube" />
@@ -68,16 +68,25 @@ footer {
   -moz-box-shadow: -1px -7px 13px 0px rgb(181, 144, 109);
   box-shadow: -1px -7px 13px 0px rgb(181, 144, 109);
   background: rgb(211, 172, 136);
-  color: #444;
+  background-image: url('/img/bg/1.png');
+  background-position: bottom;
+  color: #fff;
   padding: 2rem;
-  font-size: 1.1rem;
+  .row > div {
+    background: rgba(135, 206, 31, 0.7);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #6d4016;
+    min-width: 300px;
+    margin: 0.5rem 0;
+  }
   ul {
     list-style: none;
     padding: 0;
   }
   h3 {
     color: #df7626;
-    margin: 0.5rem 0;
+    margin-bottom: 1rem;
   }
   .brand-info {
     max-width: 400px;
@@ -88,9 +97,10 @@ footer {
 }
 
 .copyright {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #df7626;
   margin-top: 1rem;
   padding: 1rem 0 0;
   text-align: center;
+  color: #df7626;
 }
 </style>

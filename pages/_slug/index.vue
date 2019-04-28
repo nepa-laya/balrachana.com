@@ -47,6 +47,7 @@ export default {
 <style lang="scss">
 .heading {
   display: flex;
+  flex-wrap: wrap;
   padding: 1rem;
   img {
     width: 200px;

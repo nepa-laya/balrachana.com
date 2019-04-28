@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { getColor } from '~/plugins/utils'
+// import { getColor } from '~/plugins/utils'
 
 export default {
   computed: {
@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     getBgColor(ind) {
-      return getColor(ind)
+      // return getColor(ind)
     }
   }
 }
@@ -39,15 +39,17 @@ export default {
 .sections {
   margin: 1rem;
   > a {
-    border: 1px solid mistyrose;
     text-align: center;
     flex-grow: 1;
     // min-width: 500px;
+    background: rgba(200, 210, 57, 0.4);
+    box-shadow: 0 0 12px 1px #df7626;
+    margin: 1rem;
+    border-radius: 1rem;
     div {
       padding: 1rem 1rem 0 1rem;
     }
     .title {
-      color: #333;
       padding: 1rem;
     }
     h4 {

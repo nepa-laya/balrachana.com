@@ -30,7 +30,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   line-height: 1.5rem;
-  color: #333;
+  color: #6d4016;
 }
 
 *,
@@ -50,7 +50,9 @@ img {
 }
 
 body {
-  background: #e8ebf0;
+  /* background: #e8ebf0; */
+  background-image: url('/img/bg/4.png');
+  background-repeat: repeat;
 }
 
 .upper {

@@ -18,13 +18,14 @@
 .header {
   align-items: center;
   min-height: 100px;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   background: #fff;
   margin-bottom: 1rem;
   -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  padding: 0 2rem;
 
   img {
     height: 50px;
@@ -35,6 +36,6 @@
 #yt-sub {
   min-width: 174px;
   min-height: 52px;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 </style>
