@@ -30,28 +30,24 @@
         <h3>Let's Be Friends</h3>
         <ul>
           <li>
-            <img src="/img/youtube.svg" alt="YouTube" />
-            <a href="https://www.youtube.com/balrachana" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://www.youtube.com/balrachana" target="_blank" rel="noopener noreferrer">
+              <img src="/img/social/youtube.svg" alt="YouTube" />YouTube
+            </a>
           </li>
           <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-              <path
-                d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm3 8h-1.35c-.54 0-.65.22-.65.78V10h2l-.2 2H13v7h-3v-7H8v-2h2V7.7c0-1.78.93-2.7 3.03-2.7H15v3z"
-              ></path>
-            </svg>
-            <a href="https://www.facebook.com/balrachana" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.facebook.com/balrachana" target="_blank" rel="noopener noreferrer">
+              <img src="/img/social/facebook.svg" alt="Facebook" />Facebook
+            </a>
           </li>
           <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-              <path
-                d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm6.07 9.64A8.12 8.12 0 0 1 9.9 18.2a8.13 8.13 0 0 1-4.4-1.3 5.78 5.78 0 0 0 4.25-1.18 2.88 2.88 0 0 1-2.68-2c.45.09.9.06 1.3-.05a2.88 2.88 0 0 1-2.3-2.85c.38.22.82.35 1.3.36a2.88 2.88 0 0 1-.9-3.83 8.15 8.15 0 0 0 5.92 3 2.88 2.88 0 0 1 4.9-2.62 5.73 5.73 0 0 0 1.82-.7 2.88 2.88 0 0 1-1.26 1.59 5.73 5.73 0 0 0 1.65-.45 5.77 5.77 0 0 1-1.43 1.49z"
-              ></path>
-            </svg>
-            <a href="https://twitter.com/balrachana" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://twitter.com/balrachana" target="_blank" rel="noopener noreferrer">
+              <img src="/img/social/twitter.svg" alt="Twitter" />Twitter
+            </a>
           </li>
           <li>
-            <img src="/img/instagram.svg" alt="Instagram" />
-            <a href="https://instagram.com/balrachana" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://instagram.com/balrachana" target="_blank" rel="noopener noreferrer">
+              <img src="/img/social/instagram.svg" alt="Instagram" />Instagram
+            </a>
           </li>
         </ul>
       </div>
@@ -93,6 +89,16 @@ footer {
   }
   .row {
     justify-content: space-evenly;
+  }
+  .social-media {
+    a {
+      display: flex;
+      margin-bottom: 0.5rem;
+    }
+    img {
+      height: 1.5rem;
+      padding-right: 0.5rem;
+    }
   }
 }
 
