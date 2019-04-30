@@ -1,4 +1,4 @@
-# balrachana
+# Bal Rachana
 
 > Educational Rhymes for Nepali Children
 
