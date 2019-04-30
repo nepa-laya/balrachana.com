@@ -26,6 +26,14 @@ export default {
   computed: {
     section() {
       return this.$store.state.sections[this.slug]
+    },
+    title() {
+      // let st = ''
+      if (this.section.alt) {
+        return this.section.alt + ' (' + this.section.title + ')'
+      } else {
+        return this.section.title
+      }
     }
   },
   asyncData({ store, params, error }) {
@@ -39,6 +47,15 @@ export default {
   methods: {
     urlToId(url) {
       return youtubeParser(url)
+    }
+  },
+  head() {
+    return {
+      title: this.title + ' | Nepali Bal Rachana',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'description', content: 'My custom description' }
+      ]
     }
   }
 }
