@@ -14,8 +14,56 @@ export const state = () => ({
           youtube: 'https://www.youtube.com/watch?v=Devk7ZFzM-s'
         },
         {
+          title: 'वर्णमाला [क-ज्ञ] - १',
+          youtube: 'https://www.youtube.com/watch?v=su9VxABAS8E'
+        },
+        {
           title: 'वर्णमाला - २ [च छ ज झ ञ]',
           youtube: 'https://www.youtube.com/watch?v=bi7E7-HHcl0'
+        },
+        {
+          title: 'वर्णमाला [क-ज्ञ] - २',
+          youtube: 'https://www.youtube.com/watch?v=e_8VK9Ph8Ok'
+        },
+        {
+          title: 'वर्णमाला - ३ [ट ठ ड ढ ण]',
+          youtube: 'https://www.youtube.com/watch?v=mvmimxLV8GQ'
+        },
+        {
+          title: 'वर्णमाला [क-ज्ञ] - ३',
+          youtube: 'https://www.youtube.com/watch?v=K5h_xoDn8YI'
+        },
+        {
+          title: 'वर्णमाला - ४ [त थ द ध न]',
+          youtube: 'https://www.youtube.com/watch?v=hX6qOvg9Gos'
+        },
+        {
+          title: 'वर्णमाला [क-ज्ञ] - ४',
+          youtube: 'https://www.youtube.com/watch?v=zF7Y44s0F10'
+        },
+        {
+          title: 'वर्णमाला - ५ [प फ ब भ म]',
+          youtube: 'https://www.youtube.com/watch?v=L31tGNMeMQo'
+        },
+        {
+          title: 'वर्णमाला [क-ज्ञ] - ५',
+          youtube: 'https://www.youtube.com/watch?v=b9JuvGLgkAQ'
+        },
+        {
+          title: 'वर्णमाला - ६ [य र ल व श]',
+          youtube: 'https://www.youtube.com/watch?v=m_Fi734gso8'
+        },
+        {
+          title: 'वर्णमाला [क-ज्ञ] - ६',
+          youtube: 'https://www.youtube.com/watch?v=jqI7vRIKhR0'
+        },
+        {
+          title: 'वर्णमाला - ७ [ष स ह क्ष त्र ज्ञ]',
+          youtube: 'https://www.youtube.com/watch?v=failAsJ6KpM'
+        },
+        {
+          title: 'वर्णमाला [क-ज्ञ] - ७',
+          youtube: 'https://www.youtube.com/watch?v=SpE1OAkxfpM'
         }
       ]
     },
