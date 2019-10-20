@@ -5,11 +5,52 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Nepali Bal Rachana',
+    title: 'Nepali Bal Rachana by Nepalaya',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Educational Rhymes for Nepali Children' }
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Educational Rhymes for Nepali Children. Bal Rachana is a project by nepa~laya for educating Nepali children while keeping them entertained with songs, rhymes, and videos.'
+      },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'Website'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Nepali Bal Rachana by Nepalaya'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Educational Rhymes for Nepali Children. Bal Rachana is a project by nepa~laya for educating Nepali children while keeping them entertained with songs, rhymes, and videos.'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://balrachana.com/img/balrachana_banner.jpg'
+      },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: 'Nepali Bal Rachana by nepa~laya'
+      },
+      {
+        hid: 'twitter:site',
+        name: 'twitter:site',
+        content: '@balrachana'
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
