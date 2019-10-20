@@ -82,6 +82,7 @@ export default {
   margin: 1rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .child {
@@ -91,6 +92,7 @@ export default {
   background: #ddd;
   text-align: center;
   max-width: 500px;
+  min-width: 500px;
 
   h2 {
     padding: 1rem;
