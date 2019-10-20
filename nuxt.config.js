@@ -37,13 +37,18 @@ export default {
         content: 'https://balrachana.com/img/balrachana_banner.jpg'
       },
       {
+        hid: 'twitter:image:alt',
+        property: 'twitter:image:alt',
+        content: 'Bal Rachana by Nepalaya'
+      },
+      {
         hid: 'twitter:card',
         name: 'twitter:card',
         content: 'summary_large_image'
       },
       {
         hid: 'og:site_name',
-        name: 'og:site_name',
+        property: 'og:site_name',
         content: 'Nepali Bal Rachana by nepa~laya'
       },
       {
