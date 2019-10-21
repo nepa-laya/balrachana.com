@@ -5,6 +5,7 @@
         <img :src="section.thumbnail" :alt="section.alt" />
         <div class="text">
           <h1>{{ section.title }}</h1>
+          <!-- eslint-disable-next-line -->
           <p v-html="section.description"></p>
         </div>
       </div>
