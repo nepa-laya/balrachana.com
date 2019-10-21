@@ -73,7 +73,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.section.thumbnail
+          content: 'https://balrachana.com' + this.section.thumbnail
         },
         {
           hid: 'twitter:image:alt',

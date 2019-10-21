@@ -22,6 +22,17 @@
 // import { getColor } from '~/plugins/utils'
 
 export default {
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        }
+      ]
+    }
+  },
   computed: {
     sections() {
       return this.$store.state.sections
