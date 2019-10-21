@@ -2,8 +2,8 @@
   <section class="container">
     <div>
       <div class="sections row">
-        <nuxt-link v-for="(section, key, index) in sections" :key="section.slug" :to="'/' + (section.slug || '#')">
-          <div :style="{ background: getBgColor(index) }" class="section" :class="{ disabled: !section.slug }">
+        <nuxt-link v-for="section in sections" :key="section.slug" :to="'/' + (section.slug || '#')">
+          <div class="section" :class="{ disabled: !section.slug }">
             <img :src="section.thumbnail" :alt="section.alt" />
             <div class="title">
               <h2>
@@ -36,11 +36,6 @@ export default {
   computed: {
     sections() {
       return this.$store.state.sections
-    }
-  },
-  methods: {
-    getBgColor(ind) {
-      // return getColor(ind)
     }
   }
 }
