@@ -53,8 +53,38 @@ export default {
     return {
       title: this.title + ' | Nepali Bal Rachana - Nepalaya',
       meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: 'description', content: 'My custom description' }
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.section.description
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.section.description
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.section.thumbnail
+        },
+        {
+          hid: 'twitter:image:alt',
+          property: 'twitter:image:alt',
+          content: this.section.description
+        }
+        // {
+        //   hid: 'twitter:card',
+        //   name: 'twitter:card',
+        //   content: 'summary_large_image'
+        // },
       ]
     }
   }

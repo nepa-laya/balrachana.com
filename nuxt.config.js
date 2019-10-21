@@ -1,5 +1,7 @@
+import { state } from './store'
+
 export default {
-  mode: 'spa',
+  mode: 'universal',
 
   /*
    ** Headers of the page
@@ -9,12 +11,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content:
-          'Educational Rhymes for Nepali Children. Bal Rachana is a project by nepa~laya for educating Nepali children while keeping them entertained with songs, rhymes, and videos.'
-      },
+      // {
+      //   hid: 'description',
+      //   name: 'description',
+      //   content:
+      //     'Educational Rhymes for Nepali Children. Bal Rachana is a project by nepa~laya for educating Nepali children while keeping them entertained with songs, rhymes, and videos.'
+      // },
       {
         hid: 'og:type',
         property: 'og:type',
@@ -83,6 +85,19 @@ export default {
   /*
    ** Build configuration
    */
+  generate: {
+    routes: function() {
+      const sections = state().sections
+      const slugs = Object.keys(sections)
+        .filter(function(key) {
+          return sections[key].slug !== undefined
+        })
+        .map(function(key) {
+          return sections[key].slug
+        })
+      return slugs
+    }
+  },
   build: {
     /*
      ** You can extend webpack config here
