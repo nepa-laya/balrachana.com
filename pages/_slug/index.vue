@@ -27,6 +27,9 @@ export default {
     section() {
       return this.$store.state.sections[this.slug]
     },
+    description() {
+      return this.section.description.replace(/<[^>]*>?/gm, '')
+    },
     title() {
       // let st = ''
       if (this.section.alt) {
@@ -58,7 +61,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.section.description
+          content: this.description
         },
         {
           hid: 'og:title',
@@ -68,7 +71,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.section.description
+          content: this.description
         },
         {
           hid: 'og:image',
@@ -78,7 +81,7 @@ export default {
         {
           hid: 'twitter:image:alt',
           property: 'twitter:image:alt',
-          content: this.section.description
+          content: this.description
         }
         // {
         //   hid: 'twitter:card',
