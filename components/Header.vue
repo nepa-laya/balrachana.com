@@ -2,8 +2,8 @@
   <div class="header row">
     <div class="brand row">
       <nuxt-link to="/">
-        <img src="img/nepalaya.svg" alt="nepa~laya" />
-        <img src="img/bal_rachana.svg" alt="Bal Rachana" />
+        <img src="/img/nepalaya.svg" alt="nepa~laya" />
+        <img src="/img/bal_rachana.svg" alt="Bal Rachana" />
       </nuxt-link>
     </div>
 
